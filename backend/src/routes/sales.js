@@ -1,0 +1,10 @@
+const router = require("express").Router();
+const c = require("../controllers/saleController");
+const { authMiddleware } = require("../middlewares/auth");
+router.use(authMiddleware);
+router.get("/comprobantes", c.getComprobantes);
+router.get("/base", c.getBase);
+router.get("/", c.getAll);
+router.get("/:id", c.getById);
+router.post("/", c.create);
+module.exports = router;
