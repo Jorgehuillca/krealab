@@ -206,9 +206,9 @@ INSERT INTO Empleados (dni, nombres, apellidos, id_cargo) VALUES
 
 -- Usuarios
 INSERT INTO Usuarios (username, password_hash, id_empleado) VALUES
-    ('ana.torres',   SHA2('ana123',  256), 1),
-    ('luis.paredes', SHA2('luis456', 256), 2),
-    ('maria.quispe', SHA2('admin',   256), 3);
+    ('ana.torres', '$2a$10$0E7gNkYgha/59N7DNBuzxefm4DdLec6fHuiRz3qUq7lCb0Bipsn6e', 1),
+    ('luis.paredes', '$2a$10$eZvYgw92HxV9rzxHUrAR.u8yNFPPxx8YqluaaJac.bWf/.TLzrrpq', 2),
+    ('maria.quispe', '$2a$10$Orbg3muApUlOImiJy6pzFeTLEBWEb.AfPmGlLADypqYDOrSJ4wiFu', 3);
 
 -- ============================================================
 -- PRODUCTOS
